@@ -1,0 +1,130 @@
+Sample Outputs for Producer-Consumer-Problem Java Implemenation
+
+===============     RUN 1     ====================
+
+X:\GitHub\Producer-Consumer-Problem\java\src>java Main 2 2 2
+[P->M]: Produced request ID 25 of length 1 second(s) at time 1646800621246
+[C->M]: Processing request ID 25 for 1 second(s) at time 1646800621266
+[ PD ]: Producer going to bed for 2 second(s), goodnight...
+[ C1 ]: Request ID 25 completed at time 1646800621270
+[P->M]: Produced request ID 9 of length 2 second(s) at time 1646800621274
+[ PD ]: Producer going to bed for 2 second(s), goodnight...
+[C->M]: Processing request ID 9 for 2 second(s) at time 1646800621274
+[P->M]: Produced request ID 60 of length 1 second(s) at time 1646800621277
+[ C0 ]: Request ID 9 completed at time 1646800621277
+[C->M]: Processing request ID 60 for 1 second(s) at time 1646800621277
+[ PD ]: Producer going to bed for 2 second(s), goodnight...
+[ C1 ]: Request ID 60 completed at time 1646800621280
+[P->M]: Produced request ID 89 of length 1 second(s) at time 1646800621280
+[ PD ]: Producer going to bed for 2 second(s), goodnight...
+[C->M]: Processing request ID 89 for 1 second(s) at time 1646800621280
+[ C1 ]: Consumer terminated!
+[ C0 ]: Request ID 89 completed at time 1646800621283
+[ C0 ]: Consumer terminated!
+[ PD ]: Producer terminated. See ya next time, nerd!
+
+X:\GitHub\Producer-Consumer-Problem\java\src>
+
+===============     RUN 2     ====================
+
+X:\GitHub\Producer-Consumer-Problem\java\src>java Main 4 4 4
+[P->M]: Produced request ID 68 of length 4 second(s) at time 1646800679601
+[C->M]: Processing request ID 68 for 4 second(s) at time 1646800679622
+[ PD ]: Producer going to bed for 4 second(s), goodnight...
+[ C3 ]: Request ID 68 completed at time 1646800679628
+[P->M]: Produced request ID 70 of length 2 second(s) at time 1646800679631
+[ PD ]: Producer going to bed for 4 second(s), goodnight...
+[C->M]: Processing request ID 70 for 2 second(s) at time 1646800679632
+[ C2 ]: Request ID 70 completed at time 1646800679635
+[P->M]: Produced request ID 43 of length 4 second(s) at time 1646800679638
+[ PD ]: Producer going to bed for 4 second(s), goodnight...
+[C->M]: Processing request ID 43 for 4 second(s) at time 1646800679638
+[P->M]: Produced request ID 55 of length 3 second(s) at time 1646800679643
+[ C1 ]: Request ID 43 completed at time 1646800679643
+[ PD ]: Producer going to bed for 4 second(s), goodnight...
+[C->M]: Processing request ID 55 for 3 second(s) at time 1646800679643
+[ C0 ]: Request ID 55 completed at time 1646800679648
+[P->M]: Produced request ID 59 of length 4 second(s) at time 1646800679649
+[C->M]: Processing request ID 59 for 4 second(s) at time 1646800679649
+[ PD ]: Producer going to bed for 4 second(s), goodnight...
+[ C3 ]: Request ID 59 completed at time 1646800679656
+[P->M]: Produced request ID 44 of length 1 second(s) at time 1646800679656
+[C->M]: Processing request ID 44 for 1 second(s) at time 1646800679656
+[ C3 ]: Consumer terminated!
+[ PD ]: Producer going to bed for 4 second(s), goodnight...
+[ C2 ]: Request ID 44 completed at time 1646800679660
+[ C2 ]: Consumer terminated!
+[P->M]: Produced request ID 45 of length 3 second(s) at time 1646800679662
+[ PD ]: Producer going to bed for 4 second(s), goodnight...
+[C->M]: Processing request ID 45 for 3 second(s) at time 1646800679662
+[P->M]: Produced request ID 31 of length 2 second(s) at time 1646800679667
+[ C1 ]: Request ID 45 completed at time 1646800679667
+[ C1 ]: Consumer terminated!
+[ PD ]: Producer going to bed for 4 second(s), goodnight...
+[C->M]: Processing request ID 31 for 2 second(s) at time 1646800679667
+[ C0 ]: Request ID 31 completed at time 1646800679674
+[ PD ]: Producer terminated. See ya next time, nerd!
+[ C0 ]: Consumer terminated!
+
+X:\GitHub\Producer-Consumer-Problem\java\src>
+
+===============     RUN 3     ====================
+
+X:\GitHub\Producer-Consumer-Problem\java\src>java Main 6 6 6
+[P->M]: Produced request ID 96 of length 1 second(s) at time 1646800691620
+[C->M]: Processing request ID 96 for 1 second(s) at time 1646800691641
+[ C5 ]: Request ID 96 completed at time 1646800691645
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[P->M]: Produced request ID 37 of length 4 second(s) at time 1646800691653
+[C->M]: Processing request ID 37 for 4 second(s) at time 1646800691653
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[ C4 ]: Request ID 37 completed at time 1646800691660
+[P->M]: Produced request ID 90 of length 2 second(s) at time 1646800691663
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[C->M]: Processing request ID 90 for 2 second(s) at time 1646800691663
+[ C3 ]: Request ID 90 completed at time 1646800691667
+[P->M]: Produced request ID 26 of length 5 second(s) at time 1646800691671
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[C->M]: Processing request ID 26 for 5 second(s) at time 1646800691671
+[ C2 ]: Request ID 26 completed at time 1646800691677
+[P->M]: Produced request ID 38 of length 6 second(s) at time 1646800691678
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[C->M]: Processing request ID 38 for 6 second(s) at time 1646800691678
+[ C1 ]: Request ID 38 completed at time 1646800691685
+[P->M]: Produced request ID 16 of length 6 second(s) at time 1646800691685
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[C->M]: Processing request ID 16 for 6 second(s) at time 1646800691685
+[P->M]: Produced request ID 88 of length 6 second(s) at time 1646800691693
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[ C0 ]: Request ID 16 completed at time 1646800691693
+[C->M]: Processing request ID 88 for 6 second(s) at time 1646800691693
+[P->M]: Produced request ID 79 of length 1 second(s) at time 1646800691700
+[ C5 ]: Request ID 88 completed at time 1646800691700
+[C->M]: Processing request ID 79 for 1 second(s) at time 1646800691700
+[ C5 ]: Consumer terminated!
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[ C4 ]: Request ID 79 completed at time 1646800691703
+[ C4 ]: Consumer terminated!
+[P->M]: Produced request ID 24 of length 2 second(s) at time 1646800691709
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[C->M]: Processing request ID 24 for 2 second(s) at time 1646800691709
+[ C3 ]: Request ID 24 completed at time 1646800691713
+[ C3 ]: Consumer terminated!
+[P->M]: Produced request ID 83 of length 6 second(s) at time 1646800691716
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[C->M]: Processing request ID 83 for 6 second(s) at time 1646800691716
+[ C2 ]: Request ID 83 completed at time 1646800691723
+[P->M]: Produced request ID 96 of length 6 second(s) at time 1646800691723
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[ C2 ]: Consumer terminated!
+[C->M]: Processing request ID 96 for 6 second(s) at time 1646800691723
+[P->M]: Produced request ID 63 of length 6 second(s) at time 1646800691730
+[ PD ]: Producer going to bed for 6 second(s), goodnight...
+[C->M]: Processing request ID 63 for 6 second(s) at time 1646800691730
+[ C1 ]: Request ID 96 completed at time 1646800691731
+[ C1 ]: Consumer terminated!
+[ C0 ]: Request ID 63 completed at time 1646800691738
+[ PD ]: Producer terminated. See ya next time, nerd!
+[ C0 ]: Consumer terminated!
+
+X:\GitHub\Producer-Consumer-Problem\java\src>
