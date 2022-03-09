@@ -65,6 +65,7 @@ As a group, we decided to split the project into three implementations, each con
 
 * Features that did not get implemented:
   * I had trouble getting the consumers to have the values of when they were created assigned to them. I could not get both changing values and a static queue to be passed to all threads. From what I can understand the pthread parameters can only take either static variables or being passed a different set of parameters with different values. Thus I was not able to pass a queue that all threads needed to see and individual consumer numbers. Ways I could have fixed this would be to change the way I implemented my circular queue. I made my circular queue first and did not have the foresight to see that I should have designed it in a way to be manually initialized globally rather than having an initialize method that needed to be called to initialize the queue, so I would be able to simply reference the queue in the producer and consumer functions, rather than having to pass the queue through the pthread parameters allowing the consumer numbers to be passed.
+  * I replaced the interator numbers with the pthread ids to keep track of the consumers
 
 
 #### Features
@@ -88,6 +89,9 @@ As a group, we decided to split the project into three implementations, each con
 * https://stackoverflow.com/questions/20196121/passing-struct-to-pthread-as-an-argument
 * https://man7.org/linux/man-pages/man2/timer_create.2.html
 * https://www.geeksforgeeks.org/time-h-header-file-in-c-with-examples/
+* https://c-for-dummies.com/blog/?p=69
+* https://stackoverflow.com/questions/3930363/implement-time-delay-in-c
+
 
 
 
