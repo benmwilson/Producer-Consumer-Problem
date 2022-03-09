@@ -26,7 +26,7 @@ This problem was quite interesting to implement in Java. There are already lots 
 
 ## Sample Output
 
-View a sample output [here](src/sampleoutput.txt) 
+View a sample output [here](sampleoutput.txt) 
 
 ### References
 
