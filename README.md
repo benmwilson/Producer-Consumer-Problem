@@ -80,10 +80,11 @@ I did a C implementation.
   * Timer/delay function to make the producer/consumer wait n seconds to emulate execution time
 
 ### How to run
+Navigate to the ProducerConsumer folder on the branch newEric, then:
 * compile c file 
   * $ gcc procon.c -o p -lpthread
 * run program
-  * ./p
+  * $ ./p
 
 
 ### Branches
