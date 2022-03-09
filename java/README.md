@@ -31,4 +31,7 @@ View a sample output [here](src/sampleoutput.txt)
 ### References
 
 - https://docs.oracle.com/javase/tutorial/essential/environment/cmdLineArgs.html
+- https://howtodoinjava.com/java/multi-threading/wait-notify-and-notifyall-methods/
 - https://www.techiedelight.com/queue-implementation-in-java/
+- https://www.java67.com/2021/07/how-to-implement-thread-safe-bounded-buffer-in-java.html
+
