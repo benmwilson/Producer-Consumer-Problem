@@ -8,9 +8,11 @@ All the files should come pre-compiled. If you come across errors, try compiling
 
 ## How to Run the Code
 
-Navigate to `/java/src/` and open a new terminal. Inside this terminal, type `java Main` followed by two integers seperated by spaces, for example : `java Main 8 8`. These integers are the arguments required to run the code.  
+Navigate to `/java/src/` and open a new terminal. Inside this terminal, type `java Main X Y Z`, where;
 
-The first argument is the desired number of consumers and the second argument is the max duration of a request.
+X is the desired number of consumers, Y is the max duration of a request, and Z is sleep time between request generation.
+
+Example: `java Main 8 8 8 `
 
 ## Sample Output
 

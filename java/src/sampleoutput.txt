@@ -1,6 +1,6 @@
 Sample Output for Producer-Consumer-Problem Java Implemenation
 
-X:\GitHub\Producer-Consumer-Problem\java\src>java Main 8 8
+X:\GitHub\Producer-Consumer-Problem\java\src>java Main 8 8 8
 [P]: Produced request ID 11 of length 1 second(s) at time 1646791101515
 [C]: Processing request ID 11 for 1 second(s) at time 1646791101535
 [P]: Producer sleeping for 7 second(s)...
