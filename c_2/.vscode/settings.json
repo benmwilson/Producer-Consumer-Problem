@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "array": "c",
+        "*.tcc": "c",
+        "wait.h": "c",
+        "stdlib.h": "c",
+        "deque": "c",
+        "vector": "c",
+        "string_view": "c"
+    }
+}
