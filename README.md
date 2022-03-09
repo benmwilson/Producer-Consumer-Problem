@@ -26,9 +26,6 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 - [Contributors](#contributors)
 - [Resources](#resources) 
 
-
-
-
 ### Documentation
  - [Project Outline](#project-outline)
  - [Design Choices](#design-choices) TBA
@@ -42,12 +39,6 @@ useful application based on the Producer Consumer problem, also known as the bou
 This project has two parts, one completed in Java and another in C/C++
 with the overall goal of demonstrating threading and synchronization
 concepts in two widely used programming languages.
-
-#### Design Choices
-
-
-#### Features
-
 
 ### Branches
  - [Ben Wilson's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/ben-java-implementation)
@@ -65,7 +56,3 @@ concepts in two widely used programming languages.
  - [Ben Wilson](https://github.com/benmwilson)
  - [Eric Shanks](https://github.com/EricShanks68) 
  - [Richardo Brown](https://github.com/Buttertoastt)
-
-### Resources
-
-
