@@ -1,0 +1,78 @@
+Sample Output for Producer-Consumer-Problem Java Implemenation
+
+X:\GitHub\Producer-Consumer-Problem\java\src>java Main 8 8 8
+[P]: Produced request ID 8 of length 6 second(s) at time 1646792580417
+[C]: Processing request ID 8 for 6 second(s) at time 1646792580437
+[P]: Producer sleeping for 8 second(s)...
+[C]: Request ID 8 completed at time 1646792580444
+[P]: Produced request ID 76 of length 2 second(s) at time 1646792580452
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 76 for 2 second(s) at time 1646792580452
+[C]: Request ID 76 completed at time 1646792580455
+[P]: Produced request ID 63 of length 1 second(s) at time 1646792580462
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 63 for 1 second(s) at time 1646792580462
+[C]: Request ID 63 completed at time 1646792580465
+[P]: Produced request ID 49 of length 4 second(s) at time 1646792580471
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 49 for 4 second(s) at time 1646792580471
+[C]: Request ID 49 completed at time 1646792580476
+[P]: Produced request ID 25 of length 7 second(s) at time 1646792580481
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 25 for 7 second(s) at time 1646792580481
+[C]: Request ID 25 completed at time 1646792580489
+[P]: Produced request ID 21 of length 8 second(s) at time 1646792580490
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 21 for 8 second(s) at time 1646792580490
+[P]: Produced request ID 55 of length 4 second(s) at time 1646792580499
+[P]: Producer sleeping for 8 second(s)...
+[C]: Request ID 21 completed at time 1646792580499
+[C]: Processing request ID 55 for 4 second(s) at time 1646792580499
+[C]: Request ID 55 completed at time 1646792580506
+[P]: Produced request ID 14 of length 6 second(s) at time 1646792580508
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 14 for 6 second(s) at time 1646792580508
+[C]: Request ID 14 completed at time 1646792580518
+[P]: Produced request ID 25 of length 1 second(s) at time 1646792580520
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 25 for 1 second(s) at time 1646792580520
+[C]: Request ID 25 completed at time 1646792580522
+[C]: Consumer terminated!
+[P]: Produced request ID 67 of length 6 second(s) at time 1646792580529
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 67 for 6 second(s) at time 1646792580529
+[C]: Request ID 67 completed at time 1646792580536
+[C]: Consumer terminated!
+[P]: Produced request ID 16 of length 1 second(s) at time 1646792580539
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 16 for 1 second(s) at time 1646792580539
+[C]: Request ID 16 completed at time 1646792580540
+[C]: Consumer terminated!
+[P]: Produced request ID 6 of length 7 second(s) at time 1646792580547
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 6 for 7 second(s) at time 1646792580547
+[C]: Request ID 6 completed at time 1646792580555
+[C]: Consumer terminated!
+[P]: Produced request ID 31 of length 4 second(s) at time 1646792580556
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 31 for 4 second(s) at time 1646792580556
+[C]: Request ID 31 completed at time 1646792580561
+[C]: Consumer terminated!
+[P]: Produced request ID 47 of length 7 second(s) at time 1646792580565
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 47 for 7 second(s) at time 1646792580565
+[C]: Request ID 47 completed at time 1646792580574
+[C]: Consumer terminated!
+[P]: Produced request ID 1 of length 5 second(s) at time 1646792580576
+[C]: Processing request ID 1 for 5 second(s) at time 1646792580576
+[P]: Producer sleeping for 8 second(s)...
+[C]: Request ID 1 completed at time 1646792580582
+[C]: Consumer terminated!
+[P]: Produced request ID 98 of length 6 second(s) at time 1646792580588
+[P]: Producer sleeping for 8 second(s)...
+[C]: Processing request ID 98 for 6 second(s) at time 1646792580588
+[C]: Request ID 98 completed at time 1646792580595
+[C]: Consumer terminated!
+[P]: Producer terminated!
+
+X:\GitHub\Producer-Consumer-Problem\java\src>
