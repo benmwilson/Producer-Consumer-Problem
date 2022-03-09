@@ -26,14 +26,14 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 
 
 
-### Documentation
+# Documentation
  - [Project Outline](#project-outline)
  - [Design Choices](#design-choices) TBA
  - [Feautres](#features) TBA
  - [Sample Output](/sampleoutputs.txt) TBA
  
  
-#### Project Outline
+# Project Outline
 
 The goal of this project is to use threads and synchronization to implement an
 useful application based on the Producer Consumer problem, also known as the bounded-buffer problem.
@@ -41,7 +41,7 @@ This project has two parts, one completed in Java and another in C/C++
 with the overall goal of demonstrating threading and synchronization
 concepts in two widely used programming languages.
 
-####Code compliation
+#Code compliation
 Navigate to mainB.c and open a new terminal. Inside this terminal for windows, type:
 step 1:gcc mainB.c -pthread to compile the main execution file.
 step2: type ./a.out
@@ -49,7 +49,7 @@ step2: type ./a.out
 Upon receiving the prompt how many threads would you like: 
 input an integer
 
-#### Implementation
+# Implementation
 
 The main function initializes the number of threads, mutex, pthreads and semaphores.
 Two semaphores were created:
@@ -70,7 +70,7 @@ Consumer functions:
 The consumer was set to consume a set number of requests and remove them to the circular buffer, using a random sleep value betwwen 1 and 5, the consumer will sleep for the a timer is set when it wakes and begins by decrementing the semaphore by 1 the locking the mutex. At which point a random an existing request id is consumed and a time is calculated to consume the request id and the time it took to be consumed. After which the request after which the mutex is unlocked, and the semaphore is incremented. Then the buffer slot is decemented by 1, and the consumer waits for another request id to be generated to repeat the process.
 
 
-#### Features
+# Features
 
 
 <p align="center">
@@ -80,10 +80,10 @@ Semaphore to ensure consumer/producer notify each other when a new action can be
 Mutext to gaurentee mutual exclusion in the critical section of code(enqueue, dequeue)
 Timer/delay function to make the producer/consumer wait n seconds to emulate execution time
   </p>
-### Contributors
+# Contributors
  - [Ben Wilson](https://github.com/benmwilson)
  - [Eric Shanks](https://github.com/EricShanks68)
  - [Richardo Brown](https://github.com/Buttertoastt)
 
-### Resources
-
+# Resources
+https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm
