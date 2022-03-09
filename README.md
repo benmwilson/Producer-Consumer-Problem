@@ -24,15 +24,16 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 - [Branches](#branches)
 - [OutputFiles](#outputfiles)
 - [Contributors](#contributors)
-- [Resources](#resources) TBA
+- [Resources](#resources) 
 
 
 
 ### Documentation
  - [Project Outline](#project-outline)
- - [Design Choices](#design-choices) TBA
- - [Feautres](#features) TBA
- - [Sample Output](/sampleoutputs.txt) TBA
+ - [Design Choices](#design-choices) 
+ - [Feautres](#features) 
+ - [How to run](#how-to-run) 
+
  
  
 #### Project Outline
@@ -77,6 +78,12 @@ I did a C implementation.
   * Semaphore to ensure consumer/producer notify each other when a new action can be performed
   * Mutext to gaurentee mutual exclusion in the critical section of code(enqueue, dequeue) 
   * Timer/delay function to make the producer/consumer wait n seconds to emulate execution time
+
+### How to run
+* compile c file 
+  * $ gcc procon.c -o p -lpthread
+* run program
+  * ./p
 
 
 ### Branches
