@@ -1,0 +1,110 @@
+Sample Output for Producer-Consumer-Problem Java Implemenation
+
+X:\GitHub\Producer-Consumer-Problem\java\src>java Main 8 8
+[P]: Produced request ID 11 of length 1 second(s) at time 1646791101515
+[C]: Processing request ID 11 for 1 second(s) at time 1646791101535
+[P]: Producer sleeping for 7 second(s)...
+[C]: Request ID 11 completed at time 1646791101539
+[P]: Produced request ID 55 of length 1 second(s) at time 1646791101548
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 55 for 1 second(s) at time 1646791101548
+[C]: Request ID 55 completed at time 1646791101552
+[P]: Produced request ID 45 of length 2 second(s) at time 1646791101557
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 45 for 2 second(s) at time 1646791101557
+[C]: Request ID 45 completed at time 1646791101561
+[P]: Produced request ID 29 of length 1 second(s) at time 1646791101566
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 29 for 1 second(s) at time 1646791101566
+[C]: Request ID 29 completed at time 1646791101569
+[P]: Produced request ID 10 of length 2 second(s) at time 1646791101575
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 10 for 2 second(s) at time 1646791101575
+[C]: Request ID 10 completed at time 1646791101579
+[P]: Produced request ID 80 of length 6 second(s) at time 1646791101584
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 80 for 6 second(s) at time 1646791101584
+[P]: Produced request ID 59 of length 3 second(s) at time 1646791101592
+[P]: Producer sleeping for 7 second(s)...
+[C]: Request ID 80 completed at time 1646791101592
+[C]: Processing request ID 59 for 3 second(s) at time 1646791101592
+[C]: Request ID 59 completed at time 1646791101597
+[P]: Produced request ID 98 of length 8 second(s) at time 1646791101601
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 98 for 8 second(s) at time 1646791101601
+[C]: Request ID 98 completed at time 1646791101610
+[P]: Produced request ID 37 of length 5 second(s) at time 1646791101610
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 37 for 5 second(s) at time 1646791101610
+[C]: Request ID 37 completed at time 1646791101619
+[P]: Produced request ID 87 of length 5 second(s) at time 1646791101620
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 87 for 5 second(s) at time 1646791101620
+[C]: Request ID 87 completed at time 1646791101626
+[P]: Produced request ID 71 of length 5 second(s) at time 1646791101628
+[C]: Processing request ID 71 for 5 second(s) at time 1646791101628
+[P]: Producer sleeping for 7 second(s)...
+[C]: Request ID 71 completed at time 1646791101634
+[P]: Produced request ID 24 of length 6 second(s) at time 1646791101638
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 24 for 6 second(s) at time 1646791101638
+[P]: Produced request ID 10 of length 7 second(s) at time 1646791101647
+[C]: Request ID 24 completed at time 1646791101647
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 10 for 7 second(s) at time 1646791101647
+[P]: Produced request ID 78 of length 5 second(s) at time 1646791101655
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 78 for 5 second(s) at time 1646791101655
+[C]: Request ID 10 completed at time 1646791101657
+[C]: Request ID 78 completed at time 1646791101661
+[P]: Produced request ID 67 of length 1 second(s) at time 1646791101664
+[C]: Processing request ID 67 for 1 second(s) at time 1646791101664
+[P]: Producer sleeping for 7 second(s)...
+[C]: Request ID 67 completed at time 1646791101668
+[P]: Produced request ID 80 of length 3 second(s) at time 1646791101674
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 80 for 3 second(s) at time 1646791101674
+[C]: Request ID 80 completed at time 1646791101678
+[P]: Produced request ID 8 of length 7 second(s) at time 1646791101682
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 8 for 7 second(s) at time 1646791101682
+[C]: Request ID 8 completed at time 1646791101690
+[C]: Consumer terminated!
+[P]: Produced request ID 66 of length 6 second(s) at time 1646791101690
+[C]: Processing request ID 66 for 6 second(s) at time 1646791101690
+[P]: Producer sleeping for 7 second(s)...
+[C]: Request ID 66 completed at time 1646791101697
+[C]: Consumer terminated!
+[P]: Produced request ID 70 of length 3 second(s) at time 1646791101699
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 70 for 3 second(s) at time 1646791101699
+[C]: Request ID 70 completed at time 1646791101703
+[C]: Consumer terminated!
+[P]: Produced request ID 23 of length 3 second(s) at time 1646791101707
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 23 for 3 second(s) at time 1646791101707
+[C]: Request ID 23 completed at time 1646791101711
+[C]: Consumer terminated!
+[P]: Produced request ID 61 of length 2 second(s) at time 1646791101716
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 61 for 2 second(s) at time 1646791101716
+[C]: Request ID 61 completed at time 1646791101719
+[C]: Consumer terminated!
+[P]: Produced request ID 89 of length 3 second(s) at time 1646791101724
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 89 for 3 second(s) at time 1646791101724
+[C]: Request ID 89 completed at time 1646791101728
+[C]: Consumer terminated!
+[P]: Produced request ID 16 of length 8 second(s) at time 1646791101732
+[C]: Processing request ID 16 for 8 second(s) at time 1646791101732
+[P]: Producer sleeping for 7 second(s)...
+[P]: Produced request ID 88 of length 5 second(s) at time 1646791101741
+[C]: Request ID 16 completed at time 1646791101741
+[C]: Consumer terminated!
+[P]: Producer sleeping for 7 second(s)...
+[C]: Processing request ID 88 for 5 second(s) at time 1646791101741
+[C]: Request ID 88 completed at time 1646791101749
+[C]: Consumer terminated!
+[P]: Producer terminated!
+
+X:\GitHub\Producer-Consumer-Problem\java\src>
