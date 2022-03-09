@@ -20,19 +20,12 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 
 ## Table of Contents
 
-- [Documentation](#documentation)
+- [Project Outline](#project-outline)
 - [Branches](#branches)
 - [Readmes](#readmes) 
 - [Contributors](#contributors)
-- [Resources](#resources) 
 
-### Documentation
- - [Project Outline](#project-outline)
- - [Design Choices](#design-choices) TBA
- - [Feautres](#features) TBA
- 
- 
-#### Project Outline
+### Project Outline
 
 The goal of this project is to use threads and synchronization to implement an
 useful application based on the Producer Consumer problem, also known as the bounded-buffer problem.
@@ -41,14 +34,14 @@ with the overall goal of demonstrating threading and synchronization
 concepts in two widely used programming languages.
 
 ### Branches
- - [Ben Wilson's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/ben-java-implementation)
- - [Eric Shanks's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/newEric) 
- - [Richardo Brown's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/c_implementation)
+ - [Ben Wilson's Branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/ben-java-implementation)
+ - [Eric Shanks's Branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/newEric) 
+ - [Richardo Brown's Branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/c_implementation)
 
 ### Readmes
- - [Ben Wilson's readme](https://github.com/benmwilson/Producer-Consumer-Problem/blob/ben-java-implementation/java/README.md)
- - [Eric Shanks's readme](https://github.com/benmwilson/Producer-Consumer-Problem/blob/newEric/README.md) 
- - [Richardo Brown's readme]()
+ - [Ben Wilson's README](https://github.com/benmwilson/Producer-Consumer-Problem/blob/ben-java-implementation/java/README.md)
+ - [Eric Shanks's README](https://github.com/benmwilson/Producer-Consumer-Problem/blob/newEric/README.md) 
+ - [Richardo Brown's README]()
 
 
 
