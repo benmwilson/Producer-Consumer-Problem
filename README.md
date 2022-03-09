@@ -10,7 +10,7 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
   
 </p> 
 
-<p align="center">
+<p align="left">
   🚧
  This code was developed for the COSC 315 Operating Systems course at the University of British Columbia Okanagan.
   🚧
@@ -55,7 +55,7 @@ input an integer
 #### Implementation
 </p> 
 
-<p align="center">
+<p align="left">
 The main function initializes the number of threads, mutex, pthreads and semaphores.
 Two semaphores were created:
   sem_wait(&full) - Decements the sempahore by 1 and causes the caller to suspen execution waiting for subsequent thread
@@ -68,13 +68,13 @@ Lastly, the thread and semaphore objects where destroyed using pthread_mutex_des
 Producer functions:
 </p> 
 
-<p align="center">
+<p align="left">
 The producer was set to execute a set number of requests and add them to the circular buffer, using a random sleep value betwwen 1 and 5, the producer will sleep for the a timer is set when it wakes and begins by decrementing the semaphore by 1 the locking the mutex. At which point a random product id is generated and a time is calculated to generate the request id and the time it took to execute. After which the request is added to the buffer slot is then incremented by 1. Lastly the mutex is unlocked, and the semaphore is incremented.
  </p>
 Consumer functions: 
 </p> 
 
-<p align="center">
+<p align="left">
 The consumer was set to consume a set number of requests and remove them to the circular buffer, using a random sleep value betwwen 1 and 5, the consumer will sleep for the a timer is set when it wakes and begins by decrementing the semaphore by 1 the locking the mutex. At which point a random an existing request id is consumed and a time is calculated to consume the request id and the time it took to be consumed. After which the request after which the mutex is unlocked, and the semaphore is incremented. Then the buffer slot is decemented by 1, and the consumer waits for another request id to be generated to repeat the process.
 </p>
 
