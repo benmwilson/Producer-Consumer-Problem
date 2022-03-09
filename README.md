@@ -72,6 +72,13 @@ As a group, we decided to split the project into three implementations, each con
 
 #### Features
 
+* C Features
+  * Cirular queue to store requests
+  * Pthreads to have mutiple consumers take from the queue
+  * Semaphore to ensure consumer/producer notify each other when a new action can be performed
+  * Mutext to gaurentee mutual exclusion in the critical section of code(enqueue, dequeue) 
+  * Timer/delay function to make the producer/consumer wait n seconds to emulate execution time
+
 
 ### Branches
  - [Ben Wilson's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/ben-java-implementation)
