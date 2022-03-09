@@ -22,7 +22,6 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 
 - [Documentation](#documentation)
 - [Branches](#branches)
-- [OutputFiles](#outputfiles)
 - [Contributors](#contributors)
 - [Resources](#resources) TBA
 
@@ -32,7 +31,6 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
  - [Project Outline](#project-outline)
  - [Design Choices](#design-choices) TBA
  - [Feautres](#features) TBA
- - [Sample Output](/sampleoutputs.txt) TBA
  
  
 #### Project Outline
@@ -54,8 +52,6 @@ concepts in two widely used programming languages.
  - [Eric Shanks's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/newEric) 
  - [Richardo Brown's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/c_implementation)
 
-### OutputFiles
-- [Eric Shanks's outputfile](https://github.com/benmwilson/Producer-Consumer-Problem/blob/newEric/ProducerConsumer/output.text) 
 
 ### Contributors
  - [Ben Wilson](https://github.com/benmwilson)
