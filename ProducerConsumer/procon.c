@@ -81,10 +81,10 @@ void enqueue(queue *q, int id, int time){
 request dequeue(queue *q){
     request return_values;
     if(isEmpty(q)){
-        printf("empty queue\n");
+        //printf("empty queue\n");
     } else{
         return_values = q->items[q->head];
-        printf("we dequeuing these values: %d, %d\n", return_values.id, return_values.time);
+        //printf("we dequeuing these values: %d, %d\n", return_values.id, return_values.time);
         if(q->head == q->tail){
             q->head = -1;
             q->tail = -1;
@@ -107,6 +107,19 @@ void display(queue *q){
     }
 }
 
+
+//delay function
+//wait for n seconds;
+void delay(int wait_time){
+
+ time_t start = time(NULL);
+ time_t current;
+
+ do{
+     time(&current);
+ } while(difftime(current, start)< wait_time);
+
+}
 //Pthread args
 typedef struct{
     queue queue;
@@ -120,64 +133,30 @@ void producer(queue *q){
     int ID = 0;
     int wait;
 
-    //Timer
-    time_t pro_t;
-    time(&pro_t);
     int randomTimeProducer;
-    int timer_secs_init = clock() / CLOCKS_PER_SEC;
-    int timer_secs_diff;
-    int timer_elapsed;
-   
-        // //produce n amount of requests
+
+     //produce n amount of requests
     for(int i = 0; i < NUM_REQUESTS; i++){
         //wait for random seconds
         wait = 1;
         if(wait == 1){
             randomTimeProducer = rand() %MAX_WAIT_TIME;
             printf("producer is sleeping for %d seconds\n", randomTimeProducer);
-            int timer_secs_init = clock() / CLOCKS_PER_SEC;
-            while (timer_elapsed < randomTimeProducer)
-            {
-                timer_secs_diff = clock() / CLOCKS_PER_SEC;
-                timer_elapsed = timer_secs_diff - timer_secs_init;
-            }
-            wait = 0;
+            delay(randomTimeProducer);
         }
         
         //semaphore for producer
         sem_wait(&wait_if_full);
         //while the queue is not full -> add a value to the queue
-        //if(!isFull(q)){
             sem_wait(&mutex); //lock the queue from being read
             ID++; //update id sequentially
             int randomTimeConsumer = rand() %(MAX_WAIT_TIME *2);
             enqueue(q, ID,randomTimeConsumer);
-            //printf("inserted id: %d, time: %d\n", ID, randomTimeConsumer);
             display(q);
-           // printf("\n");
             sem_post(&mutex); //release lock on updating the
     
-      //  }
         sem_post(&wait_if_empty); //let consumer know there is a request available
     }
-    //give the consumers a chance to consume final request
-    // while(1){
-
-    // }
-    // while(!isEmpty(q)){
-    //     wait = 1;
-    //     if(wait == 1){
-    //         randomTimeProducer = 30;
-    //        printf("waiting for queue to be empty\n");
-    //         int timer_secs = clock() / CLOCKS_PER_SEC;
-    //         while (timer_secs < randomTimeProducer)
-    //         {
-    //             timer_secs = clock() / CLOCKS_PER_SEC;
-    //         }
-    //         wait = 0;
-    //     }
-    // }
-
 }
 
  void consumer(queue *q){
@@ -189,11 +168,13 @@ void producer(queue *q){
     request values;
 
     //Timer
-    time_t con_t;
-    time(&con_t);
+    time_t con_start, con_finish;
+    time(&con_start);
+    int elapsed;
+    long time_wait;
     //each thread will run its own version of consumer, so busy is a local variable to that thread
     //try to consume
-for(int i = 0; i < (NUM_REQUESTS); i++){
+    for(int i = 0; i < (NUM_REQUESTS); i++){
     int busy = 0;
         //wait until something to consume
         sem_wait(&wait_if_empty);
@@ -205,24 +186,14 @@ for(int i = 0; i < (NUM_REQUESTS); i++){
         //printf("Consumer %d assigned request %d, processing request for the next %d seconds\n", pid_t, values.id, values.time);
         display(q);
         sem_post(&mutex);
-       // }
         sem_post(&wait_if_full);
 
         if(busy == 1){
             // current time is CURRENT-TIME
             // Consumer i: completed request ID n at time CURRENT-TIME
-            printf("the current time is: %s", ctime(&con_t));
-            int timer_secs_init = clock() / CLOCKS_PER_SEC;
-            int timer_secs_diff;
-            int timer_elapsed;
-            while (timer_elapsed < values.time)
-            {
-                timer_secs_diff = clock() / CLOCKS_PER_SEC;
-                timer_elapsed = timer_secs_diff - timer_secs_init;
-                //printf("timer:%d\n", timer_elapsed);
-            }
-            printf("Consumer %ld: completed request %d at %s\n", pthread_self(), values.id, ctime(&con_t));
-           // printf("\n");
+            printf("the current time is: %ld\n", time(&con_start));
+            delay(values.time);
+            printf("Consumer %ld: completed request %d at %ld\n", pthread_self(), values.id, time(&con_finish));
             busy = 0;
         }
     //need to go to top again
@@ -287,6 +258,9 @@ sem_destroy(&wait_if_full);
     
 
 }
+
+
+
 
 
 
