@@ -65,13 +65,19 @@ pthread():
 A for loop was used to start a new thread upto N+1 if i is zero generate and Producer other otherwise it generates a consumer thread,additionaly pthread_create was used within the loop starts a new thread in the producer and consumer threads and initalizes the value to NULL so modified attributes arent affected.
 Lastly, the thread and semaphore objects where destroyed using pthread_mutex_destroy, sem_destroy(&empty), and sem_destroy(&full)
   </p>
+   <h3 align="center">
 Producer functions:
+  </h3>
 </p> 
 
 <p align="left">
 The producer was set to execute a set number of requests and add them to the circular buffer, using a random sleep value betwwen 1 and 5, the producer will sleep for the a timer is set when it wakes and begins by decrementing the semaphore by 1 the locking the mutex. At which point a random product id is generated and a time is calculated to generate the request id and the time it took to execute. After which the request is added to the buffer slot is then incremented by 1. Lastly the mutex is unlocked, and the semaphore is incremented.
  </p>
+ 
+ <h3 align="center">
 Consumer functions: 
+  </h1>
+  
 </p> 
 
 <p align="left">
