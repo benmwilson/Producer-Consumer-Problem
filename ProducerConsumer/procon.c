@@ -175,7 +175,7 @@ void producer(queue *q){
     int elapsed;
     long time_wait;
     //each thread will run its own version of consumer, so busy is a local variable to that thread
-    //try to consume
+    //try to consume //this is just to ensure all threads have a chance to continue checking for something in the queue (could have been more elegant)
     for(int i = 0; i < (NUM_REQUESTS); i++){
     int busy = 0;
         //wait until something to consume
@@ -207,7 +207,6 @@ void producer(queue *q){
 //MAIN
 
 pid_t pid_fork;
-//main func
 
 int main(int argc,  char* argv[]){
    // int num_threads = 5;
@@ -216,10 +215,9 @@ int main(int argc,  char* argv[]){
 
     //intialize the queue
     queue q;
-    
     initQueue(&q, SIZE);
 
-     //initialize pthread arguments (queue)
+     //initialize pthread arguments
     pargs thread_arg;
     thread_arg.queue = q;
      
@@ -231,16 +229,16 @@ int main(int argc,  char* argv[]){
      sem_init(&wait_if_empty, 0, 0); //the queue is initally 0, so consumer cannot try to take something
      
     
-    //these are the childern threads
+    //these are all the threads
     for(int i = 0; i <NUM_THREADS; i++){
         
-        //parent //do we need to make the iiinital thread the parent thread?
+        //parent thread is first, rest are childern
         if(i == 0){
             fflush(stdout);
              thread_arg.number = i;
              pthread_create(&thread[i], NULL, (void *)producer, &thread_arg);
              
-        } else{
+        } else{ 
             fflush(stdout);
             thread_arg.number = i;
             pthread_create(&thread[i], NULL, (void *)consumer, &thread_arg);
@@ -248,7 +246,7 @@ int main(int argc,  char* argv[]){
 
     }
     fflush(stdout);
-    //make the
+    //join the threads to terminate //program won't get here//program must be terminated manually 
     for (int i = 0; i < NUM_THREADS; i++) {
     pthread_join(thread[i], NULL);  
 }
