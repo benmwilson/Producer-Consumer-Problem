@@ -56,8 +56,8 @@ concepts in two widely used programming languages.
 
 ### Readmes
  - [Ben Wilson's readme](https://github.com/benmwilson/Producer-Consumer-Problem/blob/ben-java-implementation/java/README.md)
- - [Eric Shanks's branch](https://github.com/benmwilson/Producer-Consumer-Problem/blob/newEric/README.md) 
- - [Richardo Brown's branch]()
+ - [Eric Shanks's readme](https://github.com/benmwilson/Producer-Consumer-Problem/blob/newEric/README.md) 
+ - [Richardo Brown's readme]()
 
 
 
