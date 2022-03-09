@@ -22,6 +22,7 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 
 - [Documentation](#documentation)
 - [Branches](#branches)
+- [OutputFiles](#outputfile)
 - [Contributors](#contributors)
 - [Resources](#resources) TBA
 
@@ -76,6 +77,9 @@ As a group, we decided to split the project into three implementations, each con
  - [Ben Wilson's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/ben-java-implementation)
  - [Eric Shanks's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/newEric) 
  - [Richardo Brown's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/c_implementation)
+
+### OutputFiles
+- [Eric Shanks's outputfile](https://github.com/benmwilson/Producer-Consumer-Problem/blob/newEric/ProducerConsumer/output.text) 
 
 ### Contributors
  - [Ben Wilson](https://github.com/benmwilson)
