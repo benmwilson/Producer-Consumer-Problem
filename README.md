@@ -22,7 +22,7 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 
 - [Documentation](#documentation)
 - [Branches](#branches)
-- [OutputFiles](#outputfile)
+- [OutputFiles](#outputfiles)
 - [Contributors](#contributors)
 - [Resources](#resources) TBA
 
