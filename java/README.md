@@ -14,7 +14,7 @@ The first argument is the desired number of consumers and the second argument is
 
 ## Sample Output
 
-View a sample output [here](/src/sampleoutput.txt) 
+View a sample output [here](src/sampleoutput.txt) 
 
 ### References
 
