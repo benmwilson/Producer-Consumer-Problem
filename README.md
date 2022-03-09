@@ -86,10 +86,11 @@ Timer/delay function to make the producer/consumer wait n seconds to emulate exe
 We all contributed to a section of the code and did different implementations in an effort to learn as much as we could about the processes
 
 # Resources
+
 https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm
 https://opensource.com/article/19/5/how-write-good-c-main-function
 https://opensource.com/article/19/5/how-write-good-c-main-function
-localtime(), localtime64() — Convert time and correct for local time - IBM Documentation
-www.ibm.com
+www.ibm.com localtime(), localtime64() — Convert time and correct for local time - IBM Documentation
+
 https://man7.org/linux/man-pages/man3/pthread_create.3.html
 
