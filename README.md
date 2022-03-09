@@ -81,9 +81,13 @@ Timer/delay function to make the producer/consumer wait n seconds to emulate exe
  - [Ben Wilson](https://github.com/benmwilson)
  - [Eric Shanks](https://github.com/EricShanks68)
  - [Richardo Brown](https://github.com/Buttertoastt)
-# Roles
+
+# Division of Labour
 
 We all contributed to a section of the code and did different implementations in an effort to learn as much as we could about the processes
+Ben: 1/3
+Eric: 1/3
+Richardo: 1/3
 
 # Resources
 
