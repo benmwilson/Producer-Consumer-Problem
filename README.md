@@ -21,6 +21,8 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 ## Table of Contents
 
 - [Documentation](#documentation)
+- [Branches](#branches)
+- [OutputFiles](#outputfiles)
 - [Contributors](#contributors)
 - [Resources](#resources) TBA
 
@@ -46,7 +48,7 @@ As a group, we decided to split the project into three implementations, each con
 
 * Java design choices:
 
-* C design choices:
+* Eric's C design choices:
 
     * Circular queue:
       * A circular queue was implemented to keep track of the values in the queue, such that as items continuously added and removed from the queue, there would be no out of bounds concern, or need for reallocation/dynamic memory. Helper functions such as enqueue, dequeue, isFull, isEmpty, display were created.
@@ -70,9 +72,25 @@ As a group, we decided to split the project into three implementations, each con
 
 #### Features
 
+* C Features
+  * Cirular queue to store requests
+  * Pthreads to have mutiple consumers take from the queue
+  * Semaphore to ensure consumer/producer notify each other when a new action can be performed
+  * Mutext to gaurentee mutual exclusion in the critical section of code(enqueue, dequeue) 
+  * Timer/delay function to make the producer/consumer wait n seconds to emulate execution time
+
+
+### Branches
+ - [Ben Wilson's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/ben-java-implementation)
+ - [Eric Shanks's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/newEric) 
+ - [Richardo Brown's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/c_implementation)
+
+### OutputFiles
+- [Eric Shanks's outputfile](https://github.com/benmwilson/Producer-Consumer-Problem/blob/newEric/ProducerConsumer/output.text) 
+
 ### Contributors
  - [Ben Wilson](https://github.com/benmwilson)
- - [Eric Shanks](https://github.com/EricShanks68)
+ - [Eric Shanks](https://github.com/EricShanks68) 
  - [Richardo Brown](https://github.com/Buttertoastt)
 
 ### Resources
@@ -91,6 +109,10 @@ As a group, we decided to split the project into three implementations, each con
 * https://www.geeksforgeeks.org/time-h-header-file-in-c-with-examples/
 * https://c-for-dummies.com/blog/?p=69
 * https://stackoverflow.com/questions/3930363/implement-time-delay-in-c
+
+
+
+
 
 
 
