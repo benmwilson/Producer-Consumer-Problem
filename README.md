@@ -45,8 +45,7 @@ concepts in two widely used programming languages.
 
 #### Design Choices
 As a group, we decided to split the project into three implementations, each contributor making their own implementation. 
-
-* Java design choices:
+I did a C implementation.
 
 * Eric's C design choices:
 
