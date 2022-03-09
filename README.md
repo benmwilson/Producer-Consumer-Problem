@@ -46,7 +46,7 @@ As a group, we decided to split the project into three implementations, each con
 
 * Java design choices:
 
-* C design choices:
+* Eric's C design choices:
 
     * Circular queue:
       * A circular queue was implemented to keep track of the values in the queue, such that as items continuously added and removed from the queue, there would be no out of bounds concern, or need for reallocation/dynamic memory. Helper functions such as enqueue, dequeue, isFull, isEmpty, display were created.
