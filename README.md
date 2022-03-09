@@ -70,9 +70,15 @@ As a group, we decided to split the project into three implementations, each con
 
 #### Features
 
+
+### Branches
+ - [Ben Wilson's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/ben-java-implementation)
+ - [Eric Shanks's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/newEric) 
+ - [Richardo Brown's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/c_implementation)
+
 ### Contributors
  - [Ben Wilson](https://github.com/benmwilson)
- - [Eric Shanks](https://github.com/EricShanks68)
+ - [Eric Shanks](https://github.com/EricShanks68) 
  - [Richardo Brown](https://github.com/Buttertoastt)
 
 ### Resources
