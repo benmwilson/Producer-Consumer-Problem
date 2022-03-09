@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -8,10 +7,10 @@
 
 
 //turn some of the define values into user input values
-#define NUM_THREADS 3
+#define NUM_THREADS 5
 #define SIZE 5
-#define NUM_REQUESTS 4
-#define MAX_WAIT_TIME 7
+#define NUM_REQUESTS 8
+#define MAX_WAIT_TIME 9
 
 //SEMAPHORE
 sem_t mutex; //this locks the queue
@@ -135,6 +134,8 @@ void producer(queue *q){
 
     int randomTimeProducer;
 
+    printf("change\n");
+
      //produce n amount of requests
     for(int i = 0; i < NUM_REQUESTS; i++){
         //wait for random seconds
@@ -152,18 +153,19 @@ void producer(queue *q){
             ID++; //update id sequentially
             int randomTimeConsumer = rand() %(MAX_WAIT_TIME *2);
             enqueue(q, ID,randomTimeConsumer);
-            display(q);
+            //display(q);
             sem_post(&mutex); //release lock on updating the
     
         sem_post(&wait_if_empty); //let consumer know there is a request available
+    }
+    //give consumers a chance to finish consuming
+    while(1){
+
     }
 }
 
  void consumer(queue *q){
     
-    int isem = isEmpty(q);
-    
-
     //values from queue
     request values;
 
@@ -184,7 +186,7 @@ void producer(queue *q){
         sem_wait(&mutex);
         values = dequeue(q);
         //printf("Consumer %d assigned request %d, processing request for the next %d seconds\n", pid_t, values.id, values.time);
-        display(q);
+        //display(q);
         sem_post(&mutex);
         sem_post(&wait_if_full);
 
@@ -258,10 +260,6 @@ sem_destroy(&wait_if_full);
     
 
 }
-
-
-
-
 
 
 

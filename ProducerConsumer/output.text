@@ -1,0 +1,38 @@
+
+
+sample output:
+
+Note: This process has to be manually stopped.
+
+producer is sleeping for 1 seconds
+Insert values id 1 and execution time 16
+producer is sleeping for 0 seconds
+Insert values id 2 and execution time 7
+producer is sleeping for 5 seconds
+the current time is: 1646788866
+the current time is: 1646788866
+Insert values id 3 and execution time 7
+producer is sleeping for 1 seconds
+the current time is: 1646788871
+Insert values id 4 and execution time 12
+producer is sleeping for 6 seconds
+the current time is: 1646788872
+Consumer 139996368279296: completed request 2 at 1646788873
+Insert values id 5 and execution time 1
+the current time is: 1646788878
+Consumer 139996359886592: completed request 3 at 1646788878
+producer is sleeping for 5 seconds
+Consumer 139996368279296: completed request 5 at 1646788879
+Consumer 139996376672000: completed request 1 at 1646788882
+Insert values id 6 and execution time 13
+the current time is: 1646788883
+producer is sleeping for 5 seconds
+Consumer 139996351493888: completed request 4 at 1646788884
+Insert values id 7 and execution time 7
+producer is sleeping for 5 seconds
+the current time is: 1646788888
+Insert values id 8 and execution time 4
+the current time is: 1646788893
+Consumer 139996368279296: completed request 7 at 1646788895
+Consumer 139996359886592: completed request 6 at 1646788896
+Consumer 139996376672000: completed request 8 at 1646788897
