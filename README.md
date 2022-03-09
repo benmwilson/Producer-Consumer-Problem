@@ -22,8 +22,10 @@ In computing, the producer-consumer problem (also known as the bounded-buffer pr
 
 - [Documentation](#documentation)
 - [Branches](#branches)
+- [Readmes](#readmes) 
 - [Contributors](#contributors)
-- [Resources](#resources) TBA
+- [Resources](#resources) 
+
 
 
 
@@ -52,6 +54,12 @@ concepts in two widely used programming languages.
  - [Eric Shanks's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/newEric) 
  - [Richardo Brown's branch](https://github.com/benmwilson/Producer-Consumer-Problem/tree/c_implementation)
 
+### Readmes
+ - [Ben Wilson's readme](https://github.com/benmwilson/Producer-Consumer-Problem/blob/ben-java-implementation/java/README.md)
+ - [Eric Shanks's branch](https://github.com/benmwilson/Producer-Consumer-Problem/blob/newEric/README.md) 
+ - [Richardo Brown's branch]()
+
+
 
 ### Contributors
  - [Ben Wilson](https://github.com/benmwilson)
@@ -59,22 +67,5 @@ concepts in two widely used programming languages.
  - [Richardo Brown](https://github.com/Buttertoastt)
 
 ### Resources
-* https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/
-* https://www.programiz.com/dsa/circular-queue
-* https://www.youtube.com/watch?v=FcIubL92gaI
-* https://www.geeksforgeeks.org/use-posix-semaphores-c/
-* https://www.geeksforgeeks.org/producer-consumer-problem-in-c/
-* https://www.geeksforgeeks.org/semaphores-in-process-synchronization/
-* https://www.educative.io/edpresso/how-to-create-a-simple-thread-in-c
-* https://docs.oracle.com/cd/E19683-01/806-6867/6jfpgdcnj/index.html
-* https://www.youtube.com/watch?v=ukM_zzrIeXs
-* https://www.youtube.com/watch?v=l6zkaJFjUbM
-* https://stackoverflow.com/questions/20196121/passing-struct-to-pthread-as-an-argument
-* https://man7.org/linux/man-pages/man2/timer_create.2.html
-* https://www.geeksforgeeks.org/time-h-header-file-in-c-with-examples/
-* https://c-for-dummies.com/blog/?p=69
-* https://stackoverflow.com/questions/3930363/implement-time-delay-in-c
-
-
 
 
