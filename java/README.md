@@ -1,5 +1,7 @@
 # Producer-Consumer-Problem Java Implementation
 
+Implementation coded by Ben Wilson
+
 ## How to Compile
 
 Navigate to `/java/src/` and open a new terminal. Inside this terminal, type `javac Main.java` to compile the main execution file. 
